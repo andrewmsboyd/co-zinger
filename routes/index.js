@@ -20,5 +20,6 @@ app.post('/test', (req, res) => {
 });
 
 app.get('/note', (req, res) => {
+  console.log('got a message from zendesk');
   res.send('zendesk target triggered!')
 });
