@@ -19,7 +19,8 @@ app.post('/test', (req, res) => {
   res.send('POST method received')
 });
 
-app.get('/note', (req, res) => {
+// setup the listener for ticket note activity
+router.get('/note', (req, res) => {
   console.log('got a message from zendesk');
   res.send('zendesk target triggered!')
 });
